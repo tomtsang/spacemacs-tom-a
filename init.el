@@ -37,7 +37,7 @@ values."
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      ivy
-     ;;helm
+     helm
      auto-completion
      (better-defaults :variables better-defaults-move-to-end-of-code-first t)
      emacs-lisp
@@ -308,8 +308,13 @@ before packages are loaded. If you are unsure, you should try in setting them in
       '(("melpa-cn" . "http://elpa.emacs-china.org/melpa/")
         ("org-cn"   . "http://elpa.emacs-china.org/org/")
         ("gnu-cn"   . "http://elpa.emacs-china.org/gnu/")))
-  
-    )
+
+;; ;; 将 occur 的 buffer 中的光标移动方式修改为 HJKL
+;; (evilified-state-evilify-map occur-mode-map
+;;  :mode occur-mode)
+
+
+)
 
 (defun dotspacemacs/user-config ()
   "Configuration function for user code.

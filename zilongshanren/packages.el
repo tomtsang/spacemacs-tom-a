@@ -32,6 +32,7 @@
 ;; 添加 package
 (defconst zilongshanren-packages
   '(youdao-dictionary)
+  company
   )
 
 ;; 初始化 package
@@ -44,6 +45,8 @@
     )
   )
 
+(defun zilongshanren/post-init-company()
+  (setq company-minimum-prefix-length 1))
   "The list of Lisp packages required by the zilongshanren layer.
 
 Each entry is either:
